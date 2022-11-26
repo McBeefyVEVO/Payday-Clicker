@@ -1,0 +1,76 @@
+* {
+    user-select: none;
+}
+
+body {
+    background: url(../img/background.jpg)
+}
+
+#attack {
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 250px;
+    cursor: pointer;
+}
+
+#player {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    transition: 0.1s;
+
+}
+
+#enemy {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 300px;
+}
+
+#playerHP {
+    position: absolute;
+    top: 350px;
+    font-size: 32px;
+
+}
+
+#enemyHP {
+    position: absolute;
+    top: 350px;
+    font-size: 32px;
+    left: 300px;
+}
+
+#info {
+    position: absolute;
+    top: 450px;
+
+}
+
+
+#count {
+    background-color: purple;
+    color: white;
+    padding: 24px;
+    position: absolute;
+    top: 25px;
+    left: 700px;
+
+}
+
+#dmgUp {
+    position: absolute;
+    left: 700px;
+    top: 125px;
+}
+
+#hpUp {
+    position: absolute;
+    left: 700px;
+    top: 150px;
+}
