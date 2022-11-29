@@ -206,7 +206,7 @@ body {
     font-weight: bolder;
     text-decoration: none;
 
-    top: 75%;
+    top: 70%;
 }
 
 #tf2 {
@@ -263,7 +263,20 @@ body {
     top: 80%; 
 }
 
-#cat:hover, #fight:hover, #mineblock:hover, #tf2:hover {
+#sazka {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+     
+    max-width: 125px;
+    padding: 10px;
+    text-decoration: none;
+
+    top: 75%; 
+}
+
+#cat:hover, #fight:hover, #mineblock:hover, #tf2:hover, #sazka:hover {
     background-color: black;
     color: white;
 }

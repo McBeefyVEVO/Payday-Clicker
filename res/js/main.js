@@ -31,6 +31,7 @@ const mineblock = document.getElementById("mineblock");
 const cat = document.getElementById("cat");
 const fight = document.getElementById("fight")
 const bangery = document.getElementById("bangery");
+const sazka = document.getElementById("sazka");
 
 //-------------------------------------------------------------------------------------
 
@@ -152,6 +153,7 @@ start.onclick = () => {
         mineblock.style.display = "none";
         fight.style.display = "none";
         cat.style.display = "none";
+        sazka.style.display = "none";
 
         bangery.style.display = "none";
 
