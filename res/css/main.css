@@ -3,74 +3,176 @@
 }
 
 body {
-    background: url(../img/background.jpg)
+    background: url(../img/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#start {
+    display: block;
+
+    background-color: white;
+    color: black;
+    
+    position: absolute;
+    cursor: pointer;
+    
+    top: 50%;
+    left: 15%;
+
+    padding: 20px;
+    font-size: 50px;
 }
 
 #attack {
-    background-color: yellow;
-    height: 50px;
-    width: 50px;
+    display: none;
+    background-color: white;
+    color: black;
+    height: 100px;
+    width: 100px;
     position: absolute;
-    top: 250px;
+    top: 70%;
+    left: 35%;
     cursor: pointer;
 }
 
 #player {
-    width: 200px;
-    height: 200px;
+    display: none;
+    width: 300px;
+    height: 300px;
     position: absolute;
-    left: 0;
+    top: 35%;
+    left: 30%;
     transition: 0.1s;
 
 }
 
 #enemy {
-    background-color: blue;
-    width: 200px;
-    height: 200px;
+    display: none;
+    width: 300px;
+    height: 300px;
     position: absolute;
-    left: 300px;
+    top: 35%;
+    left: 60%;
 }
 
 #playerHP {
+    display: none;
+    background-color: white;
+    color: black;
     position: absolute;
-    top: 350px;
+    padding: 10px;
+    top: 25%;
+    left: 30%;
     font-size: 32px;
 
 }
 
 #enemyHP {
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 10px;
     position: absolute;
-    top: 350px;
+    top: 25%;
     font-size: 32px;
-    left: 300px;
+    left: 60%;
 }
-
-#info {
-    position: absolute;
-    top: 450px;
-
-}
-
 
 #count {
+    display: none;
     background-color: purple;
     color: white;
     padding: 24px;
     position: absolute;
-    top: 25px;
-    left: 700px;
+    top: 10%;
+    left: 60%;
 
 }
 
 #dmgUp {
+    display: none;
     position: absolute;
-    left: 700px;
-    top: 125px;
+    left: 60%;
+    top: 20%;
+    padding: 25px;
 }
 
 #hpUp {
+    display: none;
     position: absolute;
-    left: 700px;
-    top: 150px;
+    left: 60%;
+    top: 28%;
+    padding: 25px;
+}
+
+
+
+#dallas_house {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    padding: 30px;
+}
+
+#dallas_shop {
+    display: none;
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    padding: 30px;
+}
+
+
+
+
+#fight_button {
+    display: none;
+    float: right;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 30px;
+
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+#shop_button {
+    float: left;
+    display: none;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 30px;
+
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+#back_shop {
+    float: left;
+    display: none;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 30px;
+
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+#back_fight {
+    float: left;
+    display: none;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 30px;
+
+    background-color: white;
+    color: black;
+    padding: 20px;
 }
