@@ -136,7 +136,7 @@ moneyUp.onclick = () => {
 //-------------------------------------------------------------------------------------
  
 start.onclick = () => {
-        document.body.style.background = "url(./res/img/safehouse.jpeg)";
+        document.body.style.background = "url(./res/img/safehouse_new.png)";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundPosition = "center center";
         document.body.style.backgroundSize = "cover";

@@ -121,9 +121,9 @@ body {
 #dallas_house {
     display: none;
     position: absolute;
-    top: 200px;
-    left: 500px;
-    padding: 30px;
+    top: 500px;
+    left: 850px;
+    
 }
 
 #dallas_shop {
