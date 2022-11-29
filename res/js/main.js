@@ -26,7 +26,11 @@ const back_fight = document.getElementById("back_fight");
 const dozerSFX = document.getElementById("dozerSFX");
 const dallasSFX = document.getElementById("dallasSFX");
 
-
+const tf2 = document.getElementById("tf2");
+const mineblock = document.getElementById("mineblock");
+const cat = document.getElementById("cat");
+const fight = document.getElementById("fight")
+const bangery = document.getElementById("bangery");
 
 //-------------------------------------------------------------------------------------
 
@@ -143,6 +147,13 @@ start.onclick = () => {
         dallas_house.style.display = "block";
         fight_button.style.display = "block";
         shop_button.style.display = "block";
+
+        tf2.style.display = "none";
+        mineblock.style.display = "none";
+        fight.style.display = "none";
+        cat.style.display = "none";
+
+        bangery.style.display = "none";
 
         
 }
