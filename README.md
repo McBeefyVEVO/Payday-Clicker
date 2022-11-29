@@ -1,2 +1,2 @@
 Clicker:
-[Spustit](https://mcbeefyvevo.github.io/clicker/)
+[Spustit](https://mcbeefyvevo.github.io/Main-Clicker/)
