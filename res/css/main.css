@@ -108,6 +108,14 @@ body {
     padding: 25px;
 }
 
+#moneyUp {
+    display: none;
+    position: absolute;
+    left: 60%;
+    top: 36%;
+    padding: 25px;
+}
+
 
 
 #dallas_house {
