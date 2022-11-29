@@ -183,7 +183,7 @@ shop_button.onclick = () => {
 }
 
 back_shop.onclick = () => {
-        document.body.style.background = "url(./res/img/safehouse.jpeg)";
+        document.body.style.background = "url(./res/img/safehouse_new.png)";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundPosition = "center center";
         document.body.style.backgroundSize = "cover";
@@ -204,7 +204,7 @@ back_shop.onclick = () => {
 }
 
 fight_button.onclick = () => {
-        document.body.style.background = "url(./res/img/bank.jpg)";
+        document.body.style.background = "url(./res/img/bank_new.png)";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundPosition = "center center";
         document.body.style.backgroundSize = "cover";
