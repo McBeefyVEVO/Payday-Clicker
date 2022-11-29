@@ -184,3 +184,87 @@ body {
     color: black;
     padding: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+#bangery {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+     
+    max-width: 125px;
+    padding: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+
+    top: 75%;
+}
+
+#tf2 {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+     
+    max-width: 125px;
+    padding: 10px;
+    text-decoration: none;
+
+    top: 95%;
+}
+
+#mineblock {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+     
+    max-width: 125px;
+    padding: 10px;
+    text-decoration: none;
+
+    top: 90%;
+}
+
+#fight {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+
+    
+     
+    max-width: 125px;
+    padding: 10px;
+    text-decoration: none;
+
+    top: 85%;
+}
+
+#cat {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+     
+    max-width: 125px;
+    padding: 10px;
+    text-decoration: none;
+
+    top: 80%; 
+}
+
+#cat:hover, #fight:hover, #mineblock:hover, #tf2:hover {
+    background-color: black;
+    color: white;
+}
+
