@@ -2,6 +2,9 @@
 [Spustit](https://mcbeefyvevo.github.io/Payday-Clicker/)
 
 ------------------------------------------------------
+<h2>Version 1.4.1</h2>
+<p>+Fixed minor bugs</p>
+
 <h2>Version 1.4</h2>
 <p>+Replaced Bank and Safehouse backgrounds with better assets</p>
 
