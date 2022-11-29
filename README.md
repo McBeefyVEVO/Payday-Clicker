@@ -1,5 +1,5 @@
 
-[Spustit](https://mcbeefyvevo.github.io/Main-Clicker/)
+[Spustit](https://mcbeefyvevo.github.io/Payday-Clicker/)
 
 ------------------------------------------------------
 
