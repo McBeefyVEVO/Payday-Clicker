@@ -3,6 +3,9 @@
 
 ------------------------------------------------------
 
+<h2>Version 1.5</h2>
+<p>+Added Allies</p>
+
 <h2>Version 1.4.1</h2>
 <p>-Fixed minor bugs</p>
 
