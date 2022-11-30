@@ -33,6 +33,10 @@ const fight = document.getElementById("fight")
 const bangery = document.getElementById("bangery");
 const sazka = document.getElementById("sazka");
 
+const chains_house = document.getElementById("chains_house");
+const chains_fight = document.getElementById("chains_fight");
+const chains_ally = document.getElementById("chains_ally");
+
 //-------------------------------------------------------------------------------------
 
 let coins = 0;
@@ -49,6 +53,8 @@ let scaling = 1;
 
 let moneyUpgradePrice = 100;
 let moneyUpgrade = 1;
+
+let chainsupgrade = 0;
 
 //-------------------------------------------------------------------------------------
 
@@ -71,6 +77,8 @@ attack.onmousedown = () => {
         scaling += 0.50;
 
         
+
+        
     }
 
 }
@@ -88,6 +96,9 @@ const dmgPlayer = () => {
 
     if (playerHP.innerHTML <= 0) {
         clearInterval(enemyAttackInterval);
+        clearInterval(chains);
+
+
         dallasSFX.play();
         dallasSFX.volume = 0.2;
         dallasSFX.currentTime = 0;
@@ -134,6 +145,26 @@ moneyUp.onclick = () => {
     }
 }
 
+
+chains_ally.onclick = () => {
+    if(coins >= 250){
+        coins -= 250;
+
+        count.innerHTML = "Cash: " + coins;
+        chains_ally.style.display = "none";
+
+        chainsupgrade = 1;
+
+        if(chainsupgrade == 1){
+            chains = setInterval(() => {
+                enemyHP.innerHTML -= 5;
+            }, 1000);
+        }
+        
+        
+    }
+}
+
 //-------------------------------------------------------------------------------------
  
 start.onclick = () => {
@@ -177,9 +208,14 @@ shop_button.onclick = () => {
         dmgUp.style.display = "block";
         hpUp.style.display = "block";
         moneyUp.style.display = "block";
+        chains_ally.style.display = "block";
 
 
         count.style.display = "block";
+
+        if(chainsupgrade == 1){
+            chains_house.style.display = "none";
+        }
 
 
 }
@@ -201,8 +237,13 @@ back_shop.onclick = () => {
         dmgUp.style.display = "none";
         hpUp.style.display = "none";
         moneyUp.style.display = "none";
+        chains_ally.style.display = "none";
 
         count.style.display = "none";
+
+        if(chainsupgrade == 1){
+            chains_house.style.display = "block";
+        }
 }
 
 fight_button.onclick = () => {
@@ -232,6 +273,11 @@ fight_button.onclick = () => {
         dozerSFX.volume = 0.2;
         dozerSFX.currentTime = 0;
 
+        if(chainsupgrade == 1){
+            chains_fight.style.display = "block";
+            chains_house.style.display = "none";
+        }
+
 
 
 }
@@ -257,7 +303,13 @@ back_fight.onclick = () => {
     clearInterval(enemyAttackInterval);
     enemyHP.innerHTML = eneHP;
     enemyHP.innerHTML = eneHP*scaling;
+
+    if(chainsupgrade == 1){
+        chains_fight.style.display = "none";
+        chains_house.style.display = "block";
+    }
     
     
 
 }
+

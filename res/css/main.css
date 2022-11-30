@@ -185,6 +185,31 @@ body {
     padding: 20px;
 }
 
+#chains_ally {
+    display: none;
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    padding: 25px;
+}
+
+#chains_house {
+    display: none;
+    position: absolute;
+    top: 500px;
+    left: 1250px;
+    width: 600Px;
+    
+}
+
+#chains_fight {
+    display: none;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 65%;
+    left: 12%;
+}
 
 
 
