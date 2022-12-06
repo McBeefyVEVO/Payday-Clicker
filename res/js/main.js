@@ -67,7 +67,7 @@ attack.onmousedown = () => {
     }
 
     if (enemyHP.innerHTML < 0.1) {
-        coins += 30 * moneyUpgrade;
+        coins += 25 * moneyUpgrade;
         count.innerHTML = "Cash: " + coins;
 
         playerHP.innerHTML = playHP;
@@ -215,6 +215,10 @@ shop_button.onclick = () => {
 
         if(chainsupgrade == 1){
             chains_house.style.display = "none";
+        }
+
+        if(chainsupgrade == 1){
+            chains_ally.style.display = "none";
         }
 
 
