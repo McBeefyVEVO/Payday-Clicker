@@ -2,6 +2,9 @@
 [Spustit](https://mcbeefyvevo.github.io/Payday-Clicker/)
 
 ------------------------------------------------------
+<h2>Version 1.7</h2>
+<p>+Added a comically large golden spoon</p>
+<p>-Fixed a few bugs</p>
 
 <h2>Version 1.6</h2>
 <p>+Updated UI</p>
