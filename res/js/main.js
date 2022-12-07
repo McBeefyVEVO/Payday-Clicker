@@ -48,10 +48,11 @@ const HP_stat = document.getElementById("HP_stat");
 const Cash_stat = document.getElementById("Cash_stat");
 
 const funny = document.getElementById("funny");
+const funny_buy = document.getElementById("funny_buy");
 
 //-------------------------------------------------------------------------------------
 
-let coins = 0;
+let cash = 0;
 
 let playHP = 10;
 let eneHP = 20;
@@ -70,6 +71,8 @@ let chainsupgrade = 0;
 
 let kills = 0;
 
+let funnyupgrade = 0;
+
 //-------------------------------------------------------------------------------------
 
 attack.onmousedown = () => {
@@ -81,8 +84,8 @@ attack.onmousedown = () => {
     }
 
     if (enemyHP.innerHTML < 0.1) {
-        coins += 25 * moneyUpgrade;
-        count.innerHTML = "Cash: " + coins;
+        cash += 25 * moneyUpgrade;
+        count.innerHTML = "Cash: " + cash;
 
         playerHP.innerHTML = playHP;
         enemyHP.innerHTML = eneHP;
@@ -93,12 +96,6 @@ attack.onmousedown = () => {
         kills++;
 
         killcount.innerHTML = "Kills: " + kills;
-
-        
-
-
-
-        
 
         
     }
@@ -118,13 +115,12 @@ const dmgPlayer = () => {
 
     if (playerHP.innerHTML <= 0) {
         clearInterval(enemyAttackInterval);
-        clearInterval(chains);
-
 
         dallasSFX.play();
         dallasSFX.volume = 0.2;
         dallasSFX.currentTime = 0;
     }
+
 
 //-------------------------------------------------------------------------------------    
 
@@ -134,10 +130,10 @@ const dmgPlayer = () => {
 //-------------------------------------------------------------------------------------
 
 dmgUp.onclick = () => {
-    if(coins >= dmgUpgradePrice){
-        coins -= dmgUpgradePrice;
+    if(cash >= dmgUpgradePrice){
+        cash -= dmgUpgradePrice;
         
-        count.innerHTML = "Cash: " + coins;
+        count.innerHTML = "Cash: " + cash;
         dmgUpgrade++;
         dmgUpgradePrice += 50;
         dmgUp.innerHTML = "Better Gun (Increase DMG) = " + dmgUpgradePrice;
@@ -148,10 +144,10 @@ dmgUp.onclick = () => {
 }
 
 hpUp.onclick = () => {
-    if(coins >= hpUpgradePrice){
-        coins -= hpUpgradePrice;
+    if(cash >= hpUpgradePrice){
+        cash -= hpUpgradePrice;
         
-        count.innerHTML = "Cash: " + coins;
+        count.innerHTML = "Cash: " + cash;
         playHP += 5;
         hpUpgradePrice += 50;
         hpUp.innerHTML = "Medic Bag (Increase HP) = " + hpUpgradePrice;
@@ -161,10 +157,10 @@ hpUp.onclick = () => {
 }
 
 moneyUp.onclick = () => {
-    if(coins >= moneyUpgradePrice){
-        coins -= moneyUpgradePrice;
+    if(cash >= moneyUpgradePrice){
+        cash -= moneyUpgradePrice;
         
-        count.innerHTML = "Cash: " + coins;
+        count.innerHTML = "Cash: " + cash;
         moneyUpgrade++;
         moneyUpgradePrice += 100;
         moneyUp.innerHTML = "Duffle Bag (Double Cash) = " + moneyUpgradePrice;
@@ -175,15 +171,29 @@ moneyUp.onclick = () => {
 
 
 chains_ally.onclick = () => {
-    if(coins >= 250){
-        coins -= 250;
+    if(cash >= 250){
+        cash -= 250;
 
-        count.innerHTML = "Cash: " + coins;
+        count.innerHTML = "Cash: " + cash;
         chains_ally.style.display = "none";
 
         chainsupgrade = 1;
 
         
+    }
+}
+
+funny_buy.onclick = () => {
+    if(cash >= 1000){
+        cash -= 1000;
+
+        count.innerHTML = "Cash: " + cash;
+        funny_buy.style.display = "none";
+
+        funnyupgrade++;
+
+        DMG_stat.innerHTML = "DMG: " + 15;
+        dmgUpgrade += 15;
     }
 }
 
@@ -203,7 +213,8 @@ start.onclick = () => {
         shop_button.style.display = "block";
         killcount.style.display = "block";
 
-        funny.style.display = "block";
+        funny.style.display = "none";
+        funny_buy.style.display = "none";
 
 
 
@@ -254,6 +265,9 @@ shop_button.onclick = () => {
         moneyUp.style.display = "block";
         chains_ally.style.display = "block";
 
+        funny.style.display = "none";
+        funny_buy.style.display = "block";
+
 
         count.style.display = "block";
 
@@ -261,8 +275,8 @@ shop_button.onclick = () => {
             chains_house.style.display = "none";
         }
 
-        if(chainsupgrade == 1){
-            chains_ally.style.display = "none";
+        if(funnyupgrade == 1){
+            funny_buy.display = "none";
         }
 
 
@@ -298,6 +312,12 @@ back_shop.onclick = () => {
 
         count.style.display = "none";
 
+        funny_buy.style.display = "none";
+
+        if(funnyupgrade == 1){
+            funny.style.display = "block";
+        }
+
         if(chainsupgrade == 1){
             chains_house.style.display = "block";
         }
@@ -331,13 +351,16 @@ fight_button.onclick = () => {
         playerHP.style.display = "block";
         enemyHP.style.display = "block";
 
+        funny.style.display = "none";
+        funny_buy.style.display = "none";
+
         enemyAttackInterval = setInterval(dmgPlayer, 600);
 
         if(chainsupgrade == 1){
-            chains = setInterval(() => {
-                enemyHP.innerHTML -= 5;
-            }, 1000);
-        }
+
+           chainsInterval = setInterval(() => {enemyHP.innerHTML -= 5}, 1000);
+            
+        };
 
         playerHP.innerHTML = playHP;
 
@@ -348,7 +371,9 @@ fight_button.onclick = () => {
         if(chainsupgrade == 1){
             chains_fight.style.display = "block";
             chains_house.style.display = "none";
-        }
+        };
+
+        
 
 
 
@@ -381,20 +406,22 @@ back_fight.onclick = () => {
     playerHP.style.display = "none";
     enemyHP.style.display = "none";
 
+
     clearInterval(enemyAttackInterval);
     enemyHP.innerHTML = eneHP;
     enemyHP.innerHTML = eneHP*scaling;
 
-    if(chainsupgrade == 1){
-        clearInterval(chains)
-    }
 
     if(chainsupgrade == 1){
         chains_fight.style.display = "none";
         chains_house.style.display = "block";
+        clearInterval(chainsInterval);
     }
     
-    
+    if(funnyupgrade == 1){
+        funny.style.display = "block"
+    }
 
 }
+
 

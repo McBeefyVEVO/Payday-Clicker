@@ -24,6 +24,11 @@ body {
 
     padding: 20px;
     font-size: 50px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #attack {
@@ -378,6 +383,21 @@ body {
     height:auto;
     max-width: 25%;
     
+    
+
+}
+
+#funny_buy {
+    display: none;
+    position: absolute;
+    left: 75%;
+    top: 80%;
+    padding: 25px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 
 }
 
@@ -402,6 +422,11 @@ body {
     text-decoration: none;
 
     top: 70%;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #tf2 {
@@ -415,6 +440,11 @@ body {
     text-decoration: none;
 
     top: 95%;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #mineblock {
@@ -428,6 +458,11 @@ body {
     text-decoration: none;
 
     top: 90%;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #fight {
@@ -443,6 +478,11 @@ body {
     text-decoration: none;
 
     top: 85%;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #cat {
@@ -456,6 +496,11 @@ body {
     text-decoration: none;
 
     top: 80%; 
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #sazka {
@@ -469,6 +514,11 @@ body {
     text-decoration: none;
 
     top: 75%; 
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #cat:hover, #fight:hover, #mineblock:hover, #tf2:hover, #sazka:hover {
