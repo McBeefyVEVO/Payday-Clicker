@@ -370,6 +370,17 @@ body {
     border-bottom: grey 3px solid;
 }
 
+#funny {
+    display: none;
+    position:absolute;
+
+    top: 80%;
+    height:auto;
+    max-width: 25%;
+    
+
+}
+
 
 
 

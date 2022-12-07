@@ -47,6 +47,8 @@ const DMG_stat = document.getElementById("DMG_stat");
 const HP_stat = document.getElementById("HP_stat");
 const Cash_stat = document.getElementById("Cash_stat");
 
+const funny = document.getElementById("funny");
+
 //-------------------------------------------------------------------------------------
 
 let coins = 0;
@@ -200,6 +202,10 @@ start.onclick = () => {
         fight_button.style.display = "block";
         shop_button.style.display = "block";
         killcount.style.display = "block";
+
+        funny.style.display = "block";
+
+
 
         DMG_img.style.display = "block";
         HP_img.style.display = "block";
