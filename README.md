@@ -3,6 +3,11 @@
 
 ------------------------------------------------------
 
+<h2>Version 1.6</h2>
+<p>+Updated UI</p>
+<p>+Added stats in the Safehouse</p>
+<p>-Fixed chains attacking the dozer while in the safehouse/shop</p>
+
 <h2>Version 1.5.1</h2>
 <p>-Fixed bug related to hiring chains</p>
 <p>-Reduced Money per kill from 30 to 25</p>
