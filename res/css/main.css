@@ -36,6 +36,11 @@ body {
     top: 70%;
     left: 35%;
     cursor: pointer;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #player {
@@ -68,6 +73,11 @@ body {
     left: 30%;
     font-size: 32px;
 
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
+
 }
 
 #enemyHP {
@@ -79,16 +89,27 @@ body {
     top: 25%;
     font-size: 32px;
     left: 60%;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #count {
     display: none;
-    background-color: purple;
-    color: white;
+    background-color: white;
     padding: 24px;
     position: absolute;
     top: 10%;
     left: 60%;
+
+    font-weight: bold;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 
 }
 
@@ -98,6 +119,11 @@ body {
     left: 60%;
     top: 20%;
     padding: 25px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #hpUp {
@@ -106,6 +132,11 @@ body {
     left: 60%;
     top: 28%;
     padding: 25px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #moneyUp {
@@ -114,6 +145,11 @@ body {
     left: 60%;
     top: 36%;
     padding: 25px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 
@@ -147,6 +183,11 @@ body {
     background-color: white;
     color: black;
     padding: 20px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #shop_button {
@@ -159,10 +200,15 @@ body {
     background-color: white;
     color: black;
     padding: 20px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #back_shop {
-    float: left;
+    float: right;
     display: none;
     max-width: 200px;
     cursor: pointer;
@@ -171,6 +217,11 @@ body {
     background-color: white;
     color: black;
     padding: 20px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #back_fight {
@@ -183,6 +234,11 @@ body {
     background-color: white;
     color: black;
     padding: 20px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #chains_ally {
@@ -191,6 +247,11 @@ body {
     left: 75%;
     top: 20%;
     padding: 25px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 #chains_house {
@@ -209,6 +270,104 @@ body {
     position: absolute;
     top: 65%;
     left: 12%;
+}
+
+#killcount {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 1782px;
+    max-width: 200px;
+    font-size: 30px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
+
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+#DMG_img {
+    display: none;
+    position: absolute;
+
+    top: 50px;
+    left: 20%;
+    height:auto;
+    max-width: 15%;
+}
+
+#HP_img {
+    display: none;
+    position: absolute;
+    
+    left: 45%;
+    padding: 30px;
+    height:auto;
+    max-width: 5%;
+}
+
+#Cash_img {
+    display: none;
+    position: absolute;
+    
+    top: 25px;
+    left: 60%;
+    padding: 30px;
+    height:auto;
+    max-width: 5%;
+}
+
+#DMG_stat {
+    display: none;
+    position: absolute;
+
+    background-color:white;
+    
+    top: 25px;
+    left: 36%;
+    padding: 10px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
+    
+}
+
+#HP_stat {
+    display: none;
+    position: absolute;
+
+    background-color:white;
+    
+    top: 25px;
+    left: 52%;
+    padding: 10px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
+}
+
+#Cash_stat {
+    display: none;
+    position: absolute;
+
+    background-color:white;
+    
+    top: 25px;
+    left: 67.5%;
+    padding: 10px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
 
