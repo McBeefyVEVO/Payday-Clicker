@@ -2,6 +2,10 @@
 [Spustit](https://mcbeefyvevo.github.io/Payday-Clicker/)
 
 ------------------------------------------------------
+<h2>Version 1.8</h2>
+<p>+Added a menu for sponsors</p>
+<p>+Added boss select (WIP)</p>
+
 <h2>Version 1.7</h2>
 <p>+Added a comically large golden spoon</p>
 <p>-Fixed a few bugs</p>
