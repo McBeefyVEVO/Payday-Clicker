@@ -31,6 +31,7 @@ const mineblock = document.getElementById("mineblock");
 const cat = document.getElementById("cat");
 const fight = document.getElementById("fight")
 const bangery = document.getElementById("bangery");
+const bangery_back = document.getElementById("bangery_back");
 const sazka = document.getElementById("sazka");
 
 const chains_house = document.getElementById("chains_house");
@@ -49,6 +50,11 @@ const Cash_stat = document.getElementById("Cash_stat");
 
 const funny = document.getElementById("funny");
 const funny_buy = document.getElementById("funny_buy");
+
+const dallas_boss = document.getElementById("dallas_boss");
+const boss_select = document.getElementById("boss_select");
+const boss_select_back = document.getElementById("boss_select_back");
+const cloaker_fight = document.getElementById("cloaker_fight");
 
 //-------------------------------------------------------------------------------------
 
@@ -212,6 +218,7 @@ start.onclick = () => {
         fight_button.style.display = "block";
         shop_button.style.display = "block";
         killcount.style.display = "block";
+        boss_select.style.display = "block";
 
         funny.style.display = "none";
         funny_buy.style.display = "none";
@@ -237,6 +244,33 @@ start.onclick = () => {
         
 }
 
+bangery.onclick = () => {
+    start.style.display = "none";
+
+    tf2.style.display = "block";
+    mineblock.style.display = "block";
+    fight.style.display = "block";
+    cat.style.display = "block";
+    sazka.style.display = "block";
+
+    bangery_back.style.display = "block";
+    bangery.style.display = "none";
+
+}
+
+bangery_back.onclick = () => {
+    start.style.display = "block";
+
+    tf2.style.display = "none";
+    mineblock.style.display = "none";
+    fight.style.display = "none";
+    cat.style.display = "none";
+    sazka.style.display = "none";
+
+    bangery_back.style.display = "none";
+    bangery.style.display = "block";
+}
+
 shop_button.onclick = () => {
         document.body.style.background = "url(./res/img/shop.png)";
         document.body.style.backgroundRepeat = "no-repeat";
@@ -248,6 +282,7 @@ shop_button.onclick = () => {
         fight_button.style.display = "none";
         shop_button.style.display = "none";
         killcount.style.display = "none";
+        boss_select.style.display = "none";
 
         DMG_img.style.display = "none";
         HP_img.style.display = "none";
@@ -293,6 +328,7 @@ back_shop.onclick = () => {
         fight_button.style.display = "block";
         shop_button.style.display = "block";
         killcount.style.display = "block";
+        boss_select.style.display = "block";
 
         DMG_img.style.display = "block";
         HP_img.style.display = "block";
@@ -334,6 +370,7 @@ fight_button.onclick = () => {
         fight_button.style.display = "none";
         shop_button.style.display = "none";
         killcount.style.display = "none";
+        boss_select.style.display = "none";
 
         DMG_img.style.display = "none";
         HP_img.style.display = "none";
@@ -390,6 +427,7 @@ back_fight.onclick = () => {
     fight_button.style.display = "block";
     shop_button.style.display = "block";
     killcount.style.display = "block";
+    boss_select.style.display = "block";
 
     DMG_img.style.display = "block";
     HP_img.style.display = "block";
@@ -423,5 +461,71 @@ back_fight.onclick = () => {
     }
 
 }
+
+boss_select.onclick = () => {
+    document.body.style.background = "url(./res/img/boss_select_room.jpeg)";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundAttachment = "fixed";
+
+    dallas_house.style.display = "none";
+    fight_button.style.display = "none";
+    shop_button.style.display = "none";
+    killcount.style.display = "none";
+    boss_select.style.display = "none";
+    boss_select_back.style.display = "block";
+
+    DMG_img.style.display = "none";
+    HP_img.style.display = "none";
+    Cash_img.style.display = "none";
+
+    DMG_stat.style.display = "none";
+    HP_stat.style.display = "none";
+    Cash_stat.style.display = "none";
+
+    cloaker_fight.style.display = "block";
+    dallas_boss.style.display = "block";
+}
+
+boss_select_back.onclick = () => {
+    document.body.style.background = "url(./res/img/safehouse_new.png)";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundAttachment = "fixed";
+
+    dallas_house.style.display = "block";
+    fight_button.style.display = "block";
+    shop_button.style.display = "block";
+    killcount.style.display = "block";
+
+    boss_select.style.display = "block";
+    boss_select_back.style.display = "none";
+
+    DMG_img.style.display = "block";
+    HP_img.style.display = "block";
+    Cash_img.style.display = "block";
+
+    DMG_stat.style.display = "block";
+    HP_stat.style.display = "block";
+    Cash_stat.style.display = "block";
+
+    back_fight.style.display = "none";
+    player.style.display = "none";
+    enemy.style.display = "none";
+    attack.style.display = "none";
+    playerHP.style.display = "none";
+    enemyHP.style.display = "none";
+
+    dallas_boss.style.display = "none";
+    cloaker_fight.style.display = "none";
+}
+
+cloaker_fight = () => {
+
+}
+
+
 
 

@@ -17,7 +17,6 @@ body {
     color: black;
     
     position: absolute;
-    cursor: pointer;
     
     top: 50%;
     left: 15%;
@@ -401,7 +400,68 @@ body {
 
 }
 
+#boss_select {
+    display: none;
+    position: absolute;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 30px;
 
+    background-color: white;
+    color: black;
+    padding: 20px;
+
+    top: 225px;
+    left: 1782px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
+}
+
+#dallas_boss {
+    display: none;
+    position: absolute;
+    top: 500px;
+    left: 350px;
+}
+#cloaker_fight {
+    display: none;
+    position: absolute;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 30px;
+
+    top: 10%;
+    left: 70%;
+
+    background-color: white;
+    color: black;
+    padding: 20px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
+}
+
+#boss_select_back {
+    float: left;
+    display: none;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 30px;
+
+    background-color: white;
+    color: black;
+    padding: 20px;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
+}
 
 
 
@@ -417,11 +477,32 @@ body {
     color: black;
      
     max-width: 125px;
-    padding: 10px;
+    padding: 30px;
     font-weight: bolder;
     text-decoration: none;
 
-    top: 70%;
+    top: 65%;
+    left: 17.30%;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
+}
+
+#bangery_back {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+     
+    top: 50%;
+    left: 5%;
+
+    max-width: 125px;
+    padding: 30px;
+    font-weight: bolder;
+    text-decoration: none;
 
     border-right: grey 3px solid;
     border-top: lightgrey 3px solid;
@@ -430,16 +511,17 @@ body {
 }
 
 #tf2 {
-    display: block;
+    display: none;
     position: absolute;
     background-color: white;
     color: black;
      
     max-width: 125px;
-    padding: 10px;
+    padding: 30px;
     text-decoration: none;
 
-    top: 95%;
+    top: 35%;
+    left: 17.30%;
 
     border-right: grey 3px solid;
     border-top: lightgrey 3px solid;
@@ -448,16 +530,17 @@ body {
 }
 
 #mineblock {
-    display: block;
+    display: none;
     position: absolute;
     background-color: white;
     color: black;
      
     max-width: 125px;
-    padding: 10px;
+    padding: 30px;
     text-decoration: none;
 
-    top: 90%;
+    top: 44%;
+    left: 17.30%;
 
     border-right: grey 3px solid;
     border-top: lightgrey 3px solid;
@@ -466,7 +549,7 @@ body {
 }
 
 #fight {
-    display: block;
+    display: none;
     position: absolute;
     background-color: white;
     color: black;
@@ -474,10 +557,11 @@ body {
     
      
     max-width: 125px;
-    padding: 10px;
+    padding: 30px;
     text-decoration: none;
 
-    top: 85%;
+    top: 53%;
+    left: 17.30%;
 
     border-right: grey 3px solid;
     border-top: lightgrey 3px solid;
@@ -486,16 +570,17 @@ body {
 }
 
 #cat {
-    display: block;
+    display: none;
     position: absolute;
     background-color: white;
     color: black;
      
     max-width: 125px;
-    padding: 10px;
+    padding: 30px;
     text-decoration: none;
 
-    top: 80%; 
+    top: 62%;
+    left: 17.30%;
 
     border-right: grey 3px solid;
     border-top: lightgrey 3px solid;
@@ -504,16 +589,17 @@ body {
 }
 
 #sazka {
-    display: block;
+    display: none;
     position: absolute;
     background-color: white;
     color: black;
      
     max-width: 125px;
-    padding: 10px;
+    padding: 30px;
     text-decoration: none;
 
-    top: 75%; 
+    top: 71%;
+    left: 17.30%; 
 
     border-right: grey 3px solid;
     border-top: lightgrey 3px solid;
@@ -521,8 +607,13 @@ body {
     border-bottom: grey 3px solid;
 }
 
-#cat:hover, #fight:hover, #mineblock:hover, #tf2:hover, #sazka:hover {
+#cat:hover, #fight:hover, #mineblock:hover, #tf2:hover, #sazka:hover, #bangery_back:hover, #bangery:hover #start:hover {
     background-color: black;
     color: white;
+
+    border-right: grey 3px solid;
+    border-top: lightgrey 3px solid;
+    border-left: lightgrey 3px solid;
+    border-bottom: grey 3px solid;
 }
 
