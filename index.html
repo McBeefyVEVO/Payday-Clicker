@@ -30,6 +30,7 @@
 
     <img src="./res/img/epic.jpg" id="dallas_house">
     <img src="./res/img/chains.png" id="chains_house">
+    <img src="./res/img/sokol.png" id="sokol_house">
     <p id="killcount">Kills: 0</p>
 
     <img src="res\img\AK.png" id="DMG_img">
@@ -47,16 +48,17 @@
     <!--Fight-->
     <img src="res/img/epic-bank.jpg" id="player">
     <button id="attack">ATTACK</button>
-    <img src="res/img/bulldozer.png" id="enemy">
+    <img src="res/img/Swat.png" id="enemy">
     <p id="playerHP">10</p>
     <p id="enemyHP">20</p>
 
     <img src="./res/img/chains_inverted.png" id="chains_fight">
+    <img src="./res/img/sokol.png" id="sokol_fight">
 
     <button id="back_fight">Back</button>
 
-    <audio id="dozerSFX">
-        <source src="./res/img/dozer.mp3" type="audio/mp3">
+    <audio id="SwatSFX">
+        <source src="./res/img/Swat.mp3" type="audio/mp3">
     </audio>
 
     <audio id="dallasSFX">
@@ -71,6 +73,7 @@
     <button id="hpUp">Medic Bag (Increase HP) = 50</button>
     <button id="moneyUp">Duffle Bag (Double Cash) = 100</button>
     <button id="chains_ally">Hire Chains (Deals DMG) = 250</button>
+    <button id="sokol_ally">Hire Sokol (Deals DMG) = 350</button>
     <button id="funny_buy">Comically Large Golden Spoon = 1000</button>
 
     <button id="back_shop">Back</button>
@@ -81,9 +84,52 @@
 
     <!--Bosses-->
     <img src="res\img\epic.jpg" id="dallas_boss">
-    <button id="cloaker_fight">Cloaker (Req: 30 Kills)</button>
+    <button id="Taser_fight">Taser (Req: 30 Kills)</button>
+    <button id="Cloaker_fight">Cloaker (Req: 50 Kills)</button>
+    <button id="Dozer_fight">Dozer (Req: 100 Kills)</button>
     <button id="boss_select_back">Back</button>
     <!--Bosses-->
+
+    <!--Tazer Fight-->
+    <img src="res/img/epic-bank.jpg" id="player">
+    <button id="attack_taser">ATTACK</button>
+    <img src="res/img/taser.png" id="taser">
+    <p id="playerHP">10</p>
+    <p id="taserHP">500</p>
+
+    <button id="back_boss_fight">Back</button>
+
+    <audio id="taserSFX">
+        <source src="./res/img/taser.mp3" type="audio/mp3">
+    </audio>
+
+    <!--Tazer Fight-->
+    
+    <!--Cloaker Fight-->
+    <img src="res/img/epic-bank.jpg" id="player">
+    <button id="attack_cloaker">ATTACK</button>
+    <img src="res/img/cloaker.png" id="cloaker">
+
+    <p id="playerHP">10</p>
+    <p id="cloakerHP">1000</p>
+
+    <audio id="cloakerSFX">
+        <source src="./res/img/cloaker.mp3" type="audio/mp3">
+    </audio>
+    <!--Cloaker Fight-->
+
+    <!--Dozer Fight-->
+    <img src="res/img/epic-bank.jpg" id="player">
+    <button id="attack_dozer">ATTACK</button>
+    <img src="res/img/bulldozer.png" id="dozer">
+
+    <p id="playerHP">10</p>
+    <p id="dozerHP">1000</p>
+
+    <audio id="dozerSFX">
+        <source src="./res/img/dozer.mp3" type="audio/mp3">
+    </audio>
+    <!--Dozer Fight-->
 
 
     <script src="res\js\main.js" ></script>
