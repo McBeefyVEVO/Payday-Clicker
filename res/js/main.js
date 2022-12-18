@@ -127,7 +127,7 @@ attack.onmousedown = () => {
         enemyHP.innerHTML = swatHP;
 
         enemyHP.innerHTML = swatHP*scaling;
-        scaling += 0.50;
+        scaling += 0.25;
 
         kills++;
 
