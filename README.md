@@ -2,6 +2,12 @@
 [Spustit](https://mcbeefyvevo.github.io/Payday-Clicker/)
 
 ------------------------------------------------------
+<h2>Version 2.0</h2>
+<p>+Added Bosses</p>
+<p>+Added New Ally</p>
+<p>-Dozer replaced with SWAT in the Bank Fight</p>
+<p>-Fixed bugs</p>
+
 <h2>Version 1.8</h2>
 <p>+Added a menu for sponsors</p>
 <p>+Added boss select (WIP)</p>
