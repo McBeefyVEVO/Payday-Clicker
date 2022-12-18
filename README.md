@@ -7,6 +7,7 @@
 <p>+Added New Ally</p>
 <p>-Dozer replaced with SWAT in the Bank Fight</p>
 <p>-Fixed bugs</p>
+<p>-Skipped Version 1.9</p>
 
 <h2>Version 1.8</h2>
 <p>+Added a menu for sponsors</p>
