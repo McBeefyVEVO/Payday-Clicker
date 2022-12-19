@@ -33,6 +33,7 @@ const fight = document.getElementById("fight")
 const bangery = document.getElementById("bangery");
 const bangery_back = document.getElementById("bangery_back");
 const sazka = document.getElementById("sazka");
+const dungeon = document.getElementById("dungeon");
 
 const chains_house = document.getElementById("chains_house");
 const chains_fight = document.getElementById("chains_fight");
@@ -393,6 +394,7 @@ start.onclick = () => {
         fight.style.display = "none";
         cat.style.display = "none";
         sazka.style.display = "none";
+        dungeon.style.display = "none";
 
         bangery.style.display = "none";
 
@@ -407,6 +409,7 @@ bangery.onclick = () => {
     fight.style.display = "block";
     cat.style.display = "block";
     sazka.style.display = "block";
+    dungeon.style.display = "block";
 
     bangery_back.style.display = "block";
     bangery.style.display = "none";
@@ -421,6 +424,7 @@ bangery_back.onclick = () => {
     fight.style.display = "none";
     cat.style.display = "none";
     sazka.style.display = "none";
+    dungeon.style.display = "none";
 
     bangery_back.style.display = "none";
     bangery.style.display = "block";
