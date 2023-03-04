@@ -22,15 +22,8 @@
 <p>+Added stats in the Safehouse</p>
 <p>-Fixed chains attacking the dozer while in the safehouse/shop</p>
 
-<h2>Version 1.5.1</h2>
-<p>-Fixed bug related to hiring chains</p>
-<p>-Reduced Money per kill from 30 to 25</p>
-
 <h2>Version 1.5</h2>
 <p>+Added Allies</p>
-
-<h2>Version 1.4.1</h2>
-<p>-Fixed minor bugs</p>
 
 <h2>Version 1.4</h2>
 <p>+Replaced Bank and Safehouse backgrounds with better assets</p>
